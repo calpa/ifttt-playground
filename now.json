@@ -1,0 +1,14 @@
+{
+  "name": "ifttt-playground",
+  "version": 2,
+  "builds": [
+    {
+      "src": "express/*.js",
+      "use": "@now/node-server"
+    },
+    {
+      "src": "api/*/*.js",
+      "use": "@now/node"
+    }
+  ]
+}
