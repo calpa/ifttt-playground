@@ -3,12 +3,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "express/*.js",
+      "src": "express/index.js",
       "use": "@now/node-server"
-    },
+    }
+  ],
+  "routes": [
     {
-      "src": "api/*/*.js",
-      "use": "@now/node"
+      "src": "/(.*)",
+      "dest": "express/index.js"
     }
   ]
 }
